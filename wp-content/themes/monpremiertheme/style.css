@@ -1,0 +1,11 @@
+/*
+Theme name = premiertheme
+Author = HOTTIN Eric
+Description =  Mon premier theme personnalise
+Version = 1.0
+Text Domain = premiertheme
+*/
+
+body {
+    background-color: lightyellow;
+}

@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3307,
+            "driver": "MariaDB",
+            "name": "Wordpress Dev",
+            "database": "wp_doranco",
+            "username": "root",
+            "password": ""
+        }
+    ]
+}
