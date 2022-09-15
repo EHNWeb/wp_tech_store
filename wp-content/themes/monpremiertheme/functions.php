@@ -15,4 +15,34 @@ function premiertheme_init_sidebar()
             'description' => __('Zone en haut à gauche', 'premiertheme')
         )
     );
+
+    // Avec ma fonction utilisateur, j'utilise la fonction prédéfinie register_sidebar
+    register_sidebar(
+        // je stoke dans un tableau ARRAY
+        array(
+            'name' => __('haut droite', 'premiertheme'),
+            'id' => ('haut-droite'),
+            'description' => __('Zone en haut à droite', 'premiertheme')
+        )
+    );
+
+    // Avec ma fonction utilisateur, j'utilise la fonction prédéfinie register_sidebar
+    register_sidebar(
+        // je stoke dans un tableau ARRAY
+        array(
+            'name' => __('bas gauche', 'premiertheme'),
+            'id' => ('bas-gauche'),
+            'description' => __('Zone en bas à gauche', 'premiertheme')
+        )
+    );
+
+    // Avec ma fonction utilisateur, j'utilise la fonction prédéfinie register_sidebar
+    register_sidebar(
+        // je stoke dans un tableau ARRAY
+        array(
+            'name' => __('bas droite', 'premiertheme'),
+            'id' => ('bas-droite'),
+            'description' => __('Zone en bas à droite', 'premiertheme')
+        )
+    );
 }

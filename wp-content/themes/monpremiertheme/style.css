@@ -14,3 +14,23 @@ body {
     background-color: rgb(193, 193, 248);
     min-height: 80px;
 }
+
+.rouge {
+    background-color: rgb(253, 197, 197);
+    min-height: 80px;
+}
+
+.vert {
+    background-color: rgb(208, 250, 208);
+    min-height: 80px;
+}
+
+.orange {
+    background-color: rgb(251, 235, 206);
+    min-height: 80px;
+}
+
+.violet {
+    background-color: rgb(250, 202, 250);
+    min-height: 80px;
+}
