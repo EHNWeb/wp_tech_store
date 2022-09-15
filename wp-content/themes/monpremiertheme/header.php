@@ -73,7 +73,7 @@
             </div>
         </nav>
 
-        <div class="row div">
+        <div class="row">
             <div class="col-12 vert"><?php dynamic_sidebar('entete') ?></div>
         </div>
 

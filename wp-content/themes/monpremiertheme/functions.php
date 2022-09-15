@@ -42,4 +42,12 @@ function premiertheme_init_sidebar()
             'description' => __('Zone en bas à droite', 'premiertheme')
         )
     );
+
+    register_sidebar(
+        array(
+            'name' => __('entete', 'premiertheme'),
+            'id' => ('entete'),
+            'description' => __('Zone entete', 'premiertheme')
+        )
+    );
 }

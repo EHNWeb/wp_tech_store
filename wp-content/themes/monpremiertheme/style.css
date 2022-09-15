@@ -19,6 +19,7 @@ body {
 li.widget {
     list-style: none;
 }
+
 /* Fin zone haut gauche */
 
 /* Zone haut droite */
@@ -27,7 +28,7 @@ li.widget {
     margin-top: 1.5rem;
 }
 
-.phone{
+.phone {
     margin-right: 1rem;
 }
 
@@ -35,12 +36,26 @@ li.widget {
     /* background-color: rgb(253, 197, 197);
     min-height: 80px; */
 }
+
 /* Fin zone haut gauche */
 
+/* Zone entete */
 .vert {
-    background-color: rgb(208, 250, 208);
-    min-height: 80px;
+    /* background-color: rgb(208, 250, 208); */
+        padding: 0;
+    /* min-height: 80px; */
 }
+
+.image-bandeau {
+    max-width: 100%;
+
+}
+
+.image-bandeau p {
+    margin-bottom: 0;
+}
+
+/* fin zone entete */
 
 .orange {
     background-color: rgb(251, 235, 206);
