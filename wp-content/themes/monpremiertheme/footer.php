@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <footer>
         <div class="row">
-            <div class="col-6 orange"><?php dynamic_sidebar('bas-gauche') ?></div>
+            <div class="col-6 orange mt-3"><?php dynamic_sidebar('bas-gauche') ?></div>
             <div class="col-6 violet"><?php dynamic_sidebar('bas-droite') ?></div>
         </div>
     </footer>

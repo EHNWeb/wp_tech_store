@@ -42,7 +42,7 @@ li.widget {
 /* Zone entete */
 .vert {
     /* background-color: rgb(208, 250, 208); */
-        padding: 0;
+    padding: 0;
     /* min-height: 80px; */
 }
 
@@ -57,12 +57,34 @@ li.widget {
 
 /* fin zone entete */
 
+/* Début Footer */
 .orange {
-    background-color: rgb(251, 235, 206);
-    min-height: 80px;
+    /* background-color: rgb(251, 235, 206);
+    min-height: 80px; */
+}
+
+.menu-footer li {
+    list-style: none;
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.menu-footer li a {
+    text-decoration: none;
 }
 
 .violet {
-    background-color: rgb(250, 202, 250);
-    min-height: 80px;
+    /* background-color: rgb(250, 202, 250);
+    min-height: 80px; */
 }
+
+h2.widgettitle {
+    font-size: 1rem;
+}
+
+.footer-droit {
+    text-align: right;
+
+}
+
+/* Fin footert */
