@@ -25,7 +25,12 @@
 
         <div class="row">
             <!-- dynamic_sidebar est la fonction qui va permettre de récupérer en affichage FRONT les éléments que va  contenir le WIDGET haut gauche du back-office (elle prend en argument l'ID du WIDGET (haut-gauche) -->
-            <div class="col-6 bleu"><?php dynamic_sidebar('haut-gauche') ?>Tech Store</div>
+            <div class="col-6 bleu">
+                <div class="row">
+                    <div class="col-2 mt-1"><?php dynamic_sidebar('haut-gauche') ?></div>
+                    <div class="col-6 text-primary mt-3"><h1><?php bloginfo() ?></h1></div>
+                </div>
+            </div>
             <div class="col-6 rouge"><?php dynamic_sidebar('haut-droite') ?></div>
         </div>
 

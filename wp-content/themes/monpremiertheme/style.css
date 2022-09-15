@@ -7,12 +7,16 @@ Text Domain: premiertheme
 */
 
 body {
-    background-color: lightyellow;
+    /* background-color: lightyellow; */
 }
 
 .bleu {
-    background-color: rgb(193, 193, 248);
-    min-height: 80px;
+    /* background-color: rgb(193, 193, 248);
+    min-height: 80px; */
+}
+
+li.widget{
+    list-style: none;
 }
 
 .rouge {
