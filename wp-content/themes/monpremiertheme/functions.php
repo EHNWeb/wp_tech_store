@@ -51,3 +51,4 @@ function premiertheme_init_sidebar()
         )
     );
 }
+
