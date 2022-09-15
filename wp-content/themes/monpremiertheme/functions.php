@@ -9,16 +9,17 @@ function premiertheme_init_sidebar()
     // Avec ma fonction utilisateur, j'utilise la fonction prédéfinie register_sidebar
     register_sidebar(
         // je stoke dans un tableau ARRAY
+        // son nom, relié au thème (prmiertheme)
         array(
             'name' => __('haut gauche', 'premiertheme'),
+            // son id, si mot composé, pas d'espace, mais snake_case, camelCase ou tiret du 6)
             'id' => ('haut-gauche'),
+            // une description, relié au theme (premiertheme)
             'description' => __('Zone en haut à gauche', 'premiertheme')
         )
     );
 
-    // Avec ma fonction utilisateur, j'utilise la fonction prédéfinie register_sidebar
     register_sidebar(
-        // je stoke dans un tableau ARRAY
         array(
             'name' => __('haut droite', 'premiertheme'),
             'id' => ('haut-droite'),
@@ -26,9 +27,7 @@ function premiertheme_init_sidebar()
         )
     );
 
-    // Avec ma fonction utilisateur, j'utilise la fonction prédéfinie register_sidebar
     register_sidebar(
-        // je stoke dans un tableau ARRAY
         array(
             'name' => __('bas gauche', 'premiertheme'),
             'id' => ('bas-gauche'),
@@ -36,9 +35,7 @@ function premiertheme_init_sidebar()
         )
     );
 
-    // Avec ma fonction utilisateur, j'utilise la fonction prédéfinie register_sidebar
     register_sidebar(
-        // je stoke dans un tableau ARRAY
         array(
             'name' => __('bas droite', 'premiertheme'),
             'id' => ('bas-droite'),
