@@ -21,13 +21,13 @@
 <body <?php body_class() ?>>
     <?php   // echo "<pre>"; var_dump(get_defined_vars()); echo "</pre>"; 
     ?>
-    <header>
+    <header class="container-fluid">
 
         <div class="row">
             <!-- dynamic_sidebar est la fonction qui va permettre de récupérer en affichage FRONT les éléments que va  contenir le WIDGET haut gauche du back-office (elle prend en argument l'ID du WIDGET (haut-gauche) -->
             <div class="col-6 bleu">
                 <div class="row">
-                    <div class="col-2 mt-1"><?php dynamic_sidebar('haut-gauche') ?></div>
+                    <div class="col-2 mt-1 ms-2"><?php dynamic_sidebar('haut-gauche') ?></div>
                     <div class="col-6 text-primary mt-3"><h1><?php bloginfo() ?></h1></div>
                 </div>
             </div>
