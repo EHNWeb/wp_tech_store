@@ -9,3 +9,8 @@ Text Domain: premiertheme
 body {
     background-color: lightyellow;
 }
+
+.bleu {
+    background-color: rgb(193, 193, 248);
+    min-height: 80px;
+}

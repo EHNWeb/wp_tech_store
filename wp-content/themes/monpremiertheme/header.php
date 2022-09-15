@@ -20,6 +20,13 @@
 <body <?php body_class() ?>>
     <?php   // echo "<pre>"; var_dump(get_defined_vars()); echo "</pre>"; ?>
     <header>
+
+        <div class="row">
+            <!-- dynamic_sidebar est la fonction qui va permettre de récupérer en affichage FRONT les éléments que va  contenir le WIDGET haut gauche du back-office (elle prend en argument l'ID du WIDGET (haut-gauche) -->
+            <div class="col-6 bleu"><?php dynamic_sidebar('haut-gauche') ?>Tech Store</div>
+            <div class="col-6 rouge"><?php dynamic_sidebar('haut-droite') ?>Tech Store</div>
+        </div>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
