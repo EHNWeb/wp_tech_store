@@ -28,7 +28,9 @@
             <div class="col-6 bleu">
                 <div class="row">
                     <div class="col-md-2 mt-1 ms-2"><?php dynamic_sidebar('haut-gauche') ?></div>
-                    <div class="col-md-6 text-primary mt-3"><h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo() ?></a></h1></div>
+                    <div class="col-md-6 text-primary mt-3">
+                        <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo() ?></a></h1>
+                    </div>
                 </div>
             </div>
             <div class="col-6 rouge"><?php dynamic_sidebar('haut-droite') ?></div>
@@ -41,29 +43,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
+                    <ul class="navbar-nav w-100">
+                        <!-- pour afficher le menu principal dans la nav de BS, j'utilise la fonction prédéfinie wp_nav_menu, qui prend en argument un tableau array, qui contiendra deux infos, notamment la plus importante, l'id du menu (codé dans functions.php ligne 62, pour l'afficher dans cet espace) -->
+                        <?php wp_nav_menu(array('container_class' => 'menu-header', 'theme_location' => 'primary')) ?>
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

@@ -10,6 +10,20 @@ body {
     /* background-color: lightyellow; */
 }
 
+/* Début NavBar */
+.navbar-nav li {
+    list-style: none;
+    display: inline;
+    padding-right: .5rem;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Fin NavBar */
+
 /* Zone haut gauche */
 .bleu {
     /* background-color: rgb(193, 193, 248);
@@ -73,6 +87,11 @@ h2.lead {
 .container-front-page {
     background-color: #f2f6fc;
 }
+
+.titre-page a {
+    text-decoration: none;
+}
+
 /* Fin container */
 
 /* Début de Side Bar */
