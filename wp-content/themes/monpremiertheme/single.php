@@ -9,6 +9,10 @@
 
                 <?php the_post_thumbnail() ?>
 
+                <p class="text-primary">
+                    Publié le <?php the_time('d/m/Y') ?> par <?php the_author() ?>
+                </p>
+
                 <!-- Affiche le corps (Content) de l'Article dans un bloc div. -->
                 <div class="entry">
                     <?php the_content(); ?>
