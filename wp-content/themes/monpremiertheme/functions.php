@@ -69,3 +69,22 @@ function premiertheme_init_menu()
     // j'utilise de init la fonction prédéfinie register_nav_menu pour créer ensuite un menu. Je lui donne en premier argument son id, puis je le relie à mon theme (avec un descriptif dans le back office/apparence/menu -> Primary Menu)
     register_nav_menu('primary', __('Primary Menu', 'premiertheme'));
 }
+
+// HOOK qui crochète teh_excerpt et lui donne le nom de excerpt_read_more_link (ma fonction utilisateur)
+add_action('the_excerpt', 'excerpt_read_more_link');
+
+// J'execute ma fonction utilisateur en lui donnant un argument
+function excerpt_read_more_link($output)
+{
+    // $spot représente l'article (global pour le récupérer de l'espace global)
+    global $post;
+    // return permet de stocker (avant de l'utiliser) le contenu de l'argument reçu, en lui concaténant une chaîne de caractères, avec un lien (permalink) qui va pointer vers l'ID
+    return $output . "<a href=" .get_permalink($post->ID) . " class='btn btn-outline-primary'>Lire la suite</a>";
+}
+
+// HOOK pour crocheter la fonction after_setup_theme, fonstion très globale qui permet des actions de configuration, initialisation, enregistrement pour thème.
+add_action('after_setup_theme', 'premiertheme_post_thumbnails');
+
+function premiertheme_post_thumbnails(){
+    add_theme_support('post-thumbnails');
+}

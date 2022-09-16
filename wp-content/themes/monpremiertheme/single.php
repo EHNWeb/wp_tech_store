@@ -5,16 +5,13 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                 <!-- Affiche le Titre en tant que lien vers le Permalien de l'Article. -->
-                <h2 class="titre-page mt-5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <h2 class="titre-page my-5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
                 <?php the_post_thumbnail() ?>
 
-                <p class="text-end text-primary">
-                    <small>Publié le <?php the_time('d/m/Y') ?> par <?php the_author() ?></small>
-                </p>
                 <!-- Affiche le corps (Content) de l'Article dans un bloc div. -->
                 <div class="entry">
-                    <?php the_excerpt(); ?>
+                    <?php the_content(); ?>
                 </div>
 
                 <!-- Fin de La Boucle (mais notez le "else:" - voir la suite). -->
