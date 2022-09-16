@@ -92,6 +92,48 @@ h2.lead {
     text-decoration: none;
 }
 
+
+/* comment form */
+.logged-in-as :first-child {
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+.logged-in-as :nth-child(2) {
+    text-decoration: none;
+    background: #1774fd;
+    color: white;
+    border-radius: 5px;
+    padding: .5rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.comment-form-comment textarea {
+    width: 100%;
+    border: 1px solid #1774fd;
+}
+
+.form-submit input {
+    background: #1774fd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.form-submit input:hover {
+    background: white;
+    color: #1774fd;
+    border: 1px solid #1774fd;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+/* comment form */
+
 /* Fin container */
 
 /* Début de Side Bar */

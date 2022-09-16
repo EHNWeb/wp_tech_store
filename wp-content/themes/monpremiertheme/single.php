@@ -18,6 +18,10 @@
                     <?php the_content(); ?>
                 </div>
 
+                <div class="col-5 my-4">
+                    <?php comment_form() ?>
+                </div>
+
                 <!-- Fin de La Boucle (mais notez le "else:" - voir la suite). -->
             <?php endwhile;
         else : ?>
