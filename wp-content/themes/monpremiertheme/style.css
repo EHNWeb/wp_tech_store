@@ -20,6 +20,10 @@ li.widget {
     list-style: none;
 }
 
+h1 a {
+    text-decoration: none;
+}
+
 /* Fin zone haut gauche */
 
 /* Zone haut droite */

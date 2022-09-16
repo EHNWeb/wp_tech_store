@@ -50,6 +50,14 @@ function premiertheme_init_sidebar()
             'description' => __('Zone entete', 'premiertheme')
         )
     );
+
+    register_sidebar(
+        array(
+            'name' => __('main side', 'premiertheme'),
+            'id' => ('main-side'),
+            'description' => __('Zone side bar du main', 'premiertheme')
+        )
+    );
 }
 
 // HOOK qui va récupérer tout le code de INIT, pour l'utiliser ensuite dans ma fonction utilisateur PREMIERTHEME_INIT_MENU
@@ -60,5 +68,4 @@ function premiertheme_init_menu()
 {
     // j'utilise de init la fonction prédéfinie register_nav_menu pour créer ensuite un menu. Je lui donne en premier argument son id, puis je le relie à mon theme (avec un descriptif dans le back office/apparence/menu -> Primary Menu)
     register_nav_menu('primary', __('Primary Menu', 'premiertheme'));
-
 }
