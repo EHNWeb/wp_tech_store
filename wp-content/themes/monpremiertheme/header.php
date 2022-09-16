@@ -47,10 +47,7 @@
                         <!-- pour afficher le menu principal dans la nav de BS, j'utilise la fonction prédéfinie wp_nav_menu, qui prend en argument un tableau array, qui contiendra deux infos, notamment la plus importante, l'id du menu (codé dans functions.php ligne 62, pour l'afficher dans cet espace) -->
                         <?php wp_nav_menu(array('container_class' => 'menu-header', 'theme_location' => 'primary')) ?>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <?php get_search_form() ?>
                 </div>
             </div>
         </nav>
