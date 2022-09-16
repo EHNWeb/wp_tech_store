@@ -23,10 +23,9 @@
             <!-- Fin REELLE de La Boucle. -->
         <?php endif; ?>
     </div>
-    <div>
-        <div class="div col-md-3 mt-5 text-center">
-            <?php dynamic_sidebar('main-side') ?>
-        </div>
+    <div class="div col-md-3 mt-5 text-center">
+        <?php dynamic_sidebar('main-side') ?>
     </div>
+
 </div>
 <?php get_footer(); ?>

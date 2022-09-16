@@ -61,6 +61,30 @@ h1 a {
 
 /* fin zone entete */
 
+/* Début Main */
+
+/* Début de Side Bar */
+.menu-articles li {
+    list-style: none;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menu-articles li a {
+    text-decoration: none;
+}
+
+.menu-articles h2.widgettitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Fin de Side Bar */
+
+/* Fin de Main */
+
 /* Début Footer */
 .orange {
     /* background-color: rgb(251, 235, 206);
