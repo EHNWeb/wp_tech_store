@@ -18,6 +18,11 @@
                     <?php the_content(); ?>
                 </div>
 
+                <div class="commentaire col-8 my-5">
+                    <!-- Affiche les commentaires récupérés dans comment.php -->
+                    <?php comments_template() ?>
+                </div>
+
                 <div class="col-5 my-4">
                     <?php comment_form() ?>
                 </div>

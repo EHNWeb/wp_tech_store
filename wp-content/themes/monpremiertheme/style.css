@@ -134,6 +134,52 @@ h2.lead {
 
 /* comment form */
 
+
+/* commentaires */
+.comment {
+    list-style: none;
+    border: 1px solid #bcd7ff;
+    background-color: #f5f7fb;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.commentaire .comment-reply-link {
+    background: #1774fd;
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.comment-author {
+    margin-bottom: .5rem;
+}
+
+.comment-author a {
+    text-decoration: none;
+}
+
+.comment-meta {
+    margin-bottom: .5rem;
+}
+
+.comment-meta a {
+    text-decoration: none;
+}
+
+.commentaire p {
+    padding: 1rem;
+}
+
+ul.children {
+    margin-top: 1rem !important;
+}
+
+/* commentaires */
+
 /* Fin container */
 
 /* Début de Side Bar */
