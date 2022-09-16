@@ -78,13 +78,16 @@ li.widget {
     min-height: 80px; */
 }
 
+.footer-droit {
+    text-align: right;
+}
+
 h2.widgettitle {
     font-size: 1rem;
 }
 
-.footer-droit {
-    text-align: right;
-
+.widget .addtoany_list a:last-child {
+    padding: 0 20px 0 0 !important;
 }
 
 /* Fin footert */
